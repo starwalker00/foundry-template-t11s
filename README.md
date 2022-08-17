@@ -1,3 +1,13 @@
+# commands
+
+## deploy with a script
+
+https://book.getfoundry.sh/reference/forge/forge-script
+
+```
+forge script script/Counter.s.sol:MyScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast -vvvv
+```
+
 # foundry-template
 
 Streamlined template for getting started with Foundry and Solmate.
