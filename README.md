@@ -1,11 +1,13 @@
 # commands
 
-## deploy with a script
+## deploy (and verify) with a script
 
 https://book.getfoundry.sh/reference/forge/forge-script
 
 ```
+source .env
 forge script script/Counter.s.sol:MyScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast -vvvv
+forge script script/Counter.s.sol:MyScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ETHERSCAN_KEY -vvvv
 ```
 
 # foundry-template
